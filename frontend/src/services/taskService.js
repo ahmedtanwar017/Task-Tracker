@@ -1,7 +1,11 @@
 import axios from "axios";
 
+// const API = axios.create({
+//   baseURL: "http://localhost:5000/api/tasks",
+// });
+
 const API = axios.create({
-  baseURL: "http://localhost:5000/api/tasks",
+  baseURL: "https://task-tracker-6blo.onrender.com",
 });
 
 export const getTasks = () => API.get("/");
